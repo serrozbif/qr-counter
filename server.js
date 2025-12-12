@@ -38,7 +38,7 @@ function logScan() {
   fs.writeFileSync("logs.json", JSON.stringify(logs, null, 2));
 }
 
-const redirectUrl = "https://YOUR-RENDER-URL.onrender.com/go";
+const redirectUrl = "https://barcode.tec-it.com/ru/QRCode?data=https%3A%2F%2Fwww.sniezka.ua%2Fprodukt%2Fprotivogribkov-ji-zasib-sniezka-puma";
 
 if (!fs.existsSync("qr.png")) {
   QRCode.toFile("qr.png", redirectUrl, { width: 600 });
